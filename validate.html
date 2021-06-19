@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>
+        Create three buttons with initial values "0" as text and one button as "Validate".
+    </h1></head>
+<body>
+    <div class="container">
+        <div class="center">
+    <form>
+        <input type="text" id="number1" value="0"/>
+        <input type="button" onclick="incrementValue1()" value="I" />
+     </form>     
+     
+     <form>
+         <input type="text" id="number2" value="0"/>
+        <input type="button" onclick="incrementValue2()" value="II" />
+    </form>
+     
+    <form>
+            <input type="text" id="number3" value="0"/>
+            <input type="button" onclick="incrementValue3()" value="III" />
+    </form>
+
+    <form>
+        <!-- <input type="text" id="valid" /> -->
+        <input type="button" onclick="validate()" value="validate" />
+    </form>
+
+    <!-- <form>
+        <input type="button" id="reset" onclick="reset()" value="Reset" />
+    </form>
+     -->
+    <button type="button" onClick="window.location.reload();">Refresh</button> 
+    //
+    <!-- <form> 
+        <input type="tel"  id='pos' />
+        <input type="button" onclick="Storeposition()" value="position"/>
+    </form> -->
+
+<script src="increment.js"></script>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .container {
+      height: 200px;
+      width: 450px;
+      position: relative;
+      border: 3px solid green;
+    }
+    
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+</style>
